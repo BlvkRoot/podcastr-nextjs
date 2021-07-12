@@ -45,17 +45,19 @@ export default function Episode({ episode }: EpisodeProps) {
             <img src="/play.svg" alt="Tocar episódio" />
           </button>
 
-          <header>
-            <h1>{episode.title}</h1>
-            <span>{episode.members}</span>
-            <span>{episode.publishedAt}</span>
-            <span>{episode.durationAsString}</span>
-          </header>
-
-          <div 
-            className={episodeStyles.description} 
-            dangerouslySetInnerHTML={{ __html: episode.description}} />
-      </div>
+        </div>
+        
+        <header>
+          <h1>{episode.title}</h1>
+          <span>{episode.members}</span>
+          <span>{episode.publishedAt}</span>
+          <span>{episode.durationAsString}</span>
+        </header>
+        
+        <div 
+          className={episodeStyles.description} 
+          dangerouslySetInnerHTML={{ __html: episode.description}} />
+      
 
     </div>
   )
