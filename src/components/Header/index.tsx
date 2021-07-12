@@ -3,6 +3,8 @@ import ptBR from 'date-fns/locale/pt-BR'
 
 import headerStyles from './styles.module.scss';
 
+import Image from 'next/image';
+
 export function Header() {
     const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
         locale: ptBR
@@ -10,7 +12,7 @@ export function Header() {
     
     return (
         <header className={headerStyles.headerContainer}>
-            <img src="/logo.svg" alt="Podcastr"/>
+            <Image src="/logo.svg" alt="Podcastr" height={100} width={100}/>
 
             <p> O melhor para você ouvir, sempre.</p>
 
