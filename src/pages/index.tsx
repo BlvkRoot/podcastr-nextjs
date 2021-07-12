@@ -3,10 +3,11 @@
 // SSG
 
 export default function Home(props) {
-  console.log(props.episodes);
-  
   return (
-    <h1>Index</h1>
+    <div>
+      <h1>Index</h1>    
+      <p>{JSON.stringify(props.episodes)}</p>
+    </div>
   )
 }
 
